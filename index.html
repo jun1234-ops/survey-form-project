@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Junior Survey Form</h1>
+    <p id="description"> This survey helps us identify the cause of crime in Magboro locality and how it can be contained in the next few month. Please be honest with your options.</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:<label>
+      <input id="name" name="name" type="text" required placeholder="Enter your name">
+      <form id="survey-form">
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="test@gmail.com">
+      <label id="number-label" for="number">Number:<label>
+      <input type="number" name="number" id="number" min="1" max="2" placeholder="Eg: 33">
+      <select id="dropdown" name="dropdown">
+        <option value="">--select an option--</option>
+        <option value="political-crime">Political Crime</option>
+        <option value="social-crime">Social crime</option>
+      </select>
+      <p> Please select Role:</p>
+      <label>
+      <input type=radio name="category" value="Reporter"> Reporter</label>
+      <input type="radio" name="category" value="Witness">Witnesss</label>
+        <p>Select the following: </p>
+        <label>
+        <input type="checkbox" name="checkbox" value="morning-crime"> Morning crime
+        <input type="checkbox" name="checkbox" value="evening-crime"> Evening Crime
+        <input type="checkbox" name="checkbox" value="afternoon-crime"> Afternoon Crime</label>
+        <label for="comments">Additional Comments</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" height="50"></textarea>
+        <button id="submit" action=""> Submit</button>
+    </form>
+  </body>
+</html>
